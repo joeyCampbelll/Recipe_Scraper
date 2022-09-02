@@ -34,13 +34,15 @@ public class RecipeScraper {
 
 		Scanner stringReader = new Scanner(htmlText);
 
+		// This while loop scans the string of recipe tiles and pulls the links to each recipe
+
 		while (stringReader.hasNext()) {
 			String result = stringReader.nextLine();
 			if (result.startsWith("<a class=\"thumb-link\" href=\"https://www.surlatable.com/")) {
-				// System.out.println(result);
 				result = result.substring(28);
 				result = result.split("\"")[0];
-				System.out.println(result);
+				System.out.println(result); // used to debug
+				// recipeLinks.add(result);
 			}
 		}
     }
