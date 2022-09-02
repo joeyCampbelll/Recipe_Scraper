@@ -5,16 +5,61 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.concurrent.RunnableScheduledFuture;
+import java.util.concurrent.TimeUnit;
 import java.io.*;
 
 public class RecipeScraper {
     public static void main(String[] args) throws IOException, InterruptedException {
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24")) //starting URL...
-                .GET() // GET is default
-                .build();
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+		runScraper();
+    }
+
+	private static void runScraper() throws IOException, InterruptedException {
+		// String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24", 
+		// 					"https://www.surlatable.com/recipes/?srule=best-matches&start=24&sz=24", 
+		// 					"https://www.surlatable.com/recipes/?srule=best-matches&start=48&sz=24", 
+		// 					"https://www.surlatable.com/recipes/?srule=best-matches&start=72&sz=24" };
+		String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24" };
+	
+		for (String url : urls) {
+			HttpClient client = HttpClient.newHttpClient();
+			HttpRequest request = HttpRequest.newBuilder()
+					.uri(URI.create(url)) //starting URL...
+					.GET() // GET is default
+					.build();
+			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+	
+			String htmlText = response.body();
+	
+			ArrayList<String> recipeLinks = getRecipeLinks(htmlText);
+
+			System.out.println(recipeLinks);
+
+			TimeUnit.SECONDS.sleep(5);
+		}
+	}
+
+	private static ArrayList<String> getRecipeLinks(String htmlText) {
+		ArrayList<String> recipeLinks = new ArrayList<String>();
+
+		Scanner stringReader = new Scanner(htmlText);
+
+		// This while loop scans the string of recipe tiles and pulls the links to each recipe
+
+		while (stringReader.hasNext()) {
+			String result = stringReader.nextLine();
+			if (result.startsWith("<a class=\"thumb-link\" href=\"https://www.surlatable.com/")) {
+				result = result.substring(28);
+				result = result.split("\"")[0];
+				// System.out.println(result); // used to debug
+				recipeLinks.add(result);
+			}
+		}
+
+		return recipeLinks;
+	}
+}
+
 
 		// OLD CODE TO OUTPUT HTML RESPONSE TO FILE
 		
@@ -27,23 +72,3 @@ public class RecipeScraper {
         // pw.close();
 
 		// ===================
-
-		String htmlText = response.body();
-
-		ArrayList<String> recipeLinks = new ArrayList<String>();
-
-		Scanner stringReader = new Scanner(htmlText);
-
-		// This while loop scans the string of recipe tiles and pulls the links to each recipe
-
-		while (stringReader.hasNext()) {
-			String result = stringReader.nextLine();
-			if (result.startsWith("<a class=\"thumb-link\" href=\"https://www.surlatable.com/")) {
-				result = result.substring(28);
-				result = result.split("\"")[0];
-				System.out.println(result); // used to debug
-				// recipeLinks.add(result);
-			}
-		}
-    }
-}
