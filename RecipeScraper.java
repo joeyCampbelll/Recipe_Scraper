@@ -20,7 +20,9 @@ public class RecipeScraper {
 		// 					"https://www.surlatable.com/recipes/?srule=best-matches&start=48&sz=24", 
 		// 					"https://www.surlatable.com/recipes/?srule=best-matches&start=72&sz=24" };
 		String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24" };
-	
+		
+		ArrayList<String> recipeInformation = new ArrayList<String>();
+
 		for (String url : urls) {
 			HttpClient client = HttpClient.newHttpClient();
 			HttpRequest request = HttpRequest.newBuilder()
@@ -33,9 +35,7 @@ public class RecipeScraper {
 	
 			ArrayList<String> recipeLinks = getRecipeLinks(htmlText);
 
-			System.out.println(recipeLinks);
-
-			TimeUnit.SECONDS.sleep(5);
+			getRecipeInformation(recipeLinks, recipeInformation);
 		}
 	}
 
@@ -57,6 +57,51 @@ public class RecipeScraper {
 		}
 
 		return recipeLinks;
+	}
+
+	private static void getRecipeInformation(ArrayList<String> recipeLinks, ArrayList<String> recipeInformation) throws IOException, InterruptedException{
+		
+		for (String recipeLink : recipeLinks) {
+			// System.out.println(recipeLink);
+			HttpClient client = HttpClient.newHttpClient();
+			HttpRequest request = HttpRequest.newBuilder()
+			.uri(URI.create(recipeLink)) //starting URL...
+			.GET() // GET is default
+			.build();
+			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+			
+			String htmlText = response.body();
+			
+			getBreadCrumb(htmlText);
+			TimeUnit.SECONDS.sleep(10);
+		}
+	}
+
+	private static String getBreadCrumb(String htmlText) {
+		
+		Scanner stringReader = new Scanner(htmlText);
+		String breadCrumb = "";
+		while (stringReader.hasNext()) {
+			String result = stringReader.nextLine();
+			String temp = "";
+
+			if (result.startsWith("<a class=\"breadcrumb-element\"")) {
+				// System.out.println(result);
+				temp += result.split("\"")[5];
+				breadCrumb += temp + " \\ ";
+				breadCrumb = breadCrumb.replaceAll("&amp;", "&");
+			} else if (result.startsWith("<h1 class=\"recipe-name\">")) {
+				// System.out.println(result);
+				temp += result.split(">")[1];
+				temp = temp.substring(0, temp.length() - 4);
+				breadCrumb += temp;
+				breadCrumb = breadCrumb.replaceAll("Quick &#38;", "");
+				break;
+			}
+		}
+
+		System.out.println(breadCrumb);
+		return breadCrumb;
 	}
 }
 
