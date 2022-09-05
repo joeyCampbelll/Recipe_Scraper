@@ -16,7 +16,9 @@ public class Recipe {
 		parseServings();
 		parseIngredients();
 		parseInstructions();
-		
+
+		replaceHtmlEntities();
+
 		System.out.println(this);
 	}
 
@@ -44,15 +46,8 @@ public class Recipe {
 				temp += result.split(">")[1];
 				temp = temp.substring(0, temp.length() - 4);
 
-				// These lines are used to get rid of unneeded characters sequences within the string
-				temp = temp.replaceAll("Quick &#38;", "");
-				temp = temp.replaceAll("&#8212;", "");
-				temp = temp.replaceAll("&#8221;", "");
-				temp = temp.replaceAll("&#8220;", "");
-				temp = temp.replaceAll("&#232;", "");
-
 				// The path also containes the name of the recipe
-				this.path += temp; 
+				this.path += temp;
 				
 				name = temp;
 				
@@ -64,31 +59,57 @@ public class Recipe {
 		stringReader.close();
 	}
 
+	// This method is used to parse the ingredients from the htmlString
 	private void parseIngredients() {
 		Scanner stringReader = new Scanner(htmlString);
 
 		while (stringReader.hasNext()) {
 			String result = stringReader.nextLine();
+
+			// This line marks the beginning of the ingredients div
 			if (result.contains("recipe-details-ingredients")) {
 				
-				// while (!stringReader.nextLine().startsWith("</ul>")) {
+				// All ingredients start and end with an unordered list tag
+				//   Therefore, I read each line until I see the closing tag
 				while (!result.startsWith("</ul>")) {
 					result = stringReader.nextLine();
 					ingredients += result + "\n";
 				}
+
+				// Gets rid of all html elements
 				ingredients = ingredients.replaceAll("<li>|</li>|<i>|</i>|<ul>|</ul>|<b>|</b>", "");
 				ingredients = ingredients.replaceAll("<br>", "\n");
+
+				break;
+			}
+		}
+		stringReader.close();
+	}
+
+	// This method is used to parse the instructions from the htmlString
+	private void parseInstructions() {
+		Scanner stringReader = new Scanner(htmlString);
+
+		while (stringReader.hasNext()) {
+			String result = stringReader.nextLine();
+
+			// This line marks the beginning of the ingredients div
+			if (result.contains("recipe-details-procedure")) {
+				
+				// Exits the loop once the first closing div is reached
+				while (!result.startsWith("</div>")) {
+					result = stringReader.nextLine();
+					instructions += result + "\n";
+				}
+
+				// Gets rid of all html elements
+				instructions = instructions.replaceAll("</div>|<li>|</li>|<i>|</i>|<ul>|</ul>|<b>|</b>", "");
+				instructions = instructions.replaceAll("<br>", "");
 				
 				break;
 			}
 		}
-
-
 		stringReader.close();
-	}
-
-	private void parseInstructions() {
-
 	}
 
 	private void parseServings() {
@@ -98,7 +119,6 @@ public class Recipe {
 		//   It is entirely comprised of string manipulation and scanning
 		while (stringReader.hasNext()) {
 			String result = stringReader.nextLine();
-			String temp = "";
 
 			// This if condition is checking for a prefix found before each path element
 			if (result.startsWith("<div class=\"recipe-details-serves\"")) {
@@ -116,6 +136,14 @@ public class Recipe {
 			servings = "Not listed";
 
 		stringReader.close();
+	}
+
+	private void replaceHtmlEntities() {
+		name = RemoveHtmlEntity.replaceHtmlEntities(name);
+		path = RemoveHtmlEntity.replaceHtmlEntities(path);
+		ingredients = RemoveHtmlEntity.replaceHtmlEntities(ingredients);
+		instructions = RemoveHtmlEntity.replaceHtmlEntities(instructions);
+		servings = RemoveHtmlEntity.replaceHtmlEntities(servings);
 	}
 
 	public String getName() {

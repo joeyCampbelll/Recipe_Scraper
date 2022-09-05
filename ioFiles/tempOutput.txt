@@ -28,8 +28,8 @@
 
 
 
-<title>Turkey Meatball Naan’wich with Yogurt and Pickled Vegetables Recipe | Sur La Table</title>
-<meta name="description" content=" Check out Turkey Meatball Naan&rsquo;wich with Yogurt and Pickled Vegetables recipe and more from Sur La Table!"/>
+<title>Cheddar and Bacon Stuffed Grilled Burgers Recipe | Sur La Table</title>
+<meta name="description" content=" Check out Cheddar and Bacon Stuffed Grilled Burgers recipe and more from Sur La Table!"/>
 
 
 <link href="/on/demandware.static/Sites-SLT-Site/-/default/dw8e83e6e2/images/favicon.ico" rel="shortcut icon" />
@@ -241,7 +241,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 
 
 
-<link rel="canonical" href="https://www.surlatable.com/turkey-meatball-naan%E2%80%99wich-with-yogurt-and-pickled-vegetables/REC-351157.html" />
+<link rel="canonical" href="https://www.surlatable.com/cheddar-and-bacon-stuffed-grilled-burgers/REC-215719.html" />
 
 
 
@@ -261,10 +261,10 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 
 
 
-<meta property="og:image" content="https://assets.surlatable.com/m/2b062cb547a86127/webimage-FPS2_E04_MeatballNaanwich.jpg"/>
-<meta property="og:url" content="https://www.surlatable.com/turkey-meatball-naan%E2%80%99wich-with-yogurt-and-pickled-vegetables/REC-351157.html"/>
-<meta property="og:title" content="Turkey Meatball Naan&rsquo;wich with Yogurt and Pickled Vegetables Recipe | Sur La Table"/>
-<meta property="og:description" content="Check out Turkey Meatball Naan&rsquo;wich with Yogurt and Pickled Vegetables recipe and more from Sur La Table!"/>
+<meta property="og:image" content="https://assets.surlatable.com/m/183981c1d1da0bc0/webimage-recipeguide_may17_cheddarbaconburger.jpg"/>
+<meta property="og:url" content="https://www.surlatable.com/cheddar-and-bacon-stuffed-grilled-burgers/REC-215719.html"/>
+<meta property="og:title" content="Cheddar and Bacon Stuffed Grilled Burgers Recipe | Sur La Table"/>
+<meta property="og:description" content="Check out Cheddar and Bacon Stuffed Grilled Burgers recipe and more from Sur La Table!"/>
 <meta property="og:type" content="product"/>
 <meta property="og:site_name" content="Sur La Table" />
 
@@ -994,7 +994,7 @@ dw.ac.applyContext({category: "WRC-429218"});
 
 
 
-<span class="breadcrumb-element">Turkey Meatball Naan’wich with Yogurt and Pickled Vegetables</span>
+<span class="breadcrumb-element">Cheddar and Bacon Stuffed Grilled Burgers</span>
 
 
 
@@ -1108,7 +1108,7 @@ dw.ac.applyContext({category: "WRC-429218"});
 		if(window.CQuotient) {
 			var cq_params = {};
 			cq_params.product = {
-					id: 'REC-351157',
+					id: 'REC-215719',
 					sku: '',
 					type: '',
 					alt_id: ''
@@ -1125,17 +1125,17 @@ dw.ac.applyContext({category: "WRC-429218"});
 </script>
 <script type="text/javascript">//<!--
 /* <![CDATA[ (viewProduct-active_data.js) */
-dw.ac._capture({id: "REC-351157", type: "detail"});
+dw.ac._capture({id: "REC-215719", type: "detail"});
 /* ]]> */
 // -->
 </script>
 <div class="recipe-detail-page">
 
 <div class="recipe-col-2-mobileonly hide-desktop">
-<h1 class="recipe-name">Turkey Meatball Naan’wich with Yogurt and Pickled Vegetables</h1>
+<h1 class="recipe-name">Cheddar and Bacon Stuffed Grilled Burgers</h1>
 
 <div class="recipe-author">
-By Tested and perfected in the Sur la Table kitchen
+By Recipe developed for Sur La Table&rsquo;s Cooking Classes
 </div>
 
 </div>
@@ -1162,9 +1162,9 @@ By Tested and perfected in the Sur la Table kitchen
 
 
 
-<a href=https://assets.surlatable.com/m/2b062cb547a86127/webimage-FPS2_E04_MeatballNaanwich.jpg target=_blank class="product-image main-image single-image" title="Turkey Meatball Naan&rsquo;wich with Yogurt and Pickled Vegetables">
+<a href=https://assets.surlatable.com/m/183981c1d1da0bc0/webimage-recipeguide_may17_cheddarbaconburger.jpg target=_blank class="product-image main-image single-image" title="Cheddar and Bacon Stuffed Grilled Burgers">
 <span class='product-image-PDPMain'>
-<img class="primary-image" src="https://assets.surlatable.com/m/2b062cb547a86127/webimage-FPS2_E04_MeatballNaanwich.jpg" alt="Turkey Meatball Naan&rsquo;wich with Yogurt and Pickled Vegetables"/>
+<img class="primary-image" src="https://assets.surlatable.com/m/183981c1d1da0bc0/webimage-recipeguide_may17_cheddarbaconburger.jpg" alt="Cheddar and Bacon Stuffed Grilled Burgers"/>
 </span>
 </a>
 </div>
@@ -1181,7 +1181,7 @@ By Tested and perfected in the Sur la Table kitchen
     {
       "@context": "https://schema.org",
       "@type": "Restaurant",
-      "image":"https://assets.surlatable.com/m/2b062cb547a86127/webimage-FPS2_E04_MeatballNaanwich.jpg",
+      "image":"https://assets.surlatable.com/m/183981c1d1da0bc0/webimage-recipeguide_may17_cheddarbaconburger.jpg",
       "@id": "null",
       "name": "Sur La Table",
       "address": {
@@ -1209,8 +1209,8 @@ By Tested and perfected in the Sur la Table kitchen
     {
       "@context": "https://schema.org/",
       "@type": "Recipe",
-      "name": "Turkey Meatball Naan&rsquo;wich with Yogurt and Pickled Vegetables",
-      "image":"https://assets.surlatable.com/m/2b062cb547a86127/webimage-FPS2_E04_MeatballNaanwich.jpg"
+      "name": "Cheddar and Bacon Stuffed Grilled Burgers",
+      "image":"https://assets.surlatable.com/m/183981c1d1da0bc0/webimage-recipeguide_may17_cheddarbaconburger.jpg"
     }
 
     </script>
@@ -1235,20 +1235,15 @@ Makes 4 servings
 </div>
 <div class="recipe-details-ingredients">
 <ul>
-<li>5 pieces whole-grain naan</li>
-<li>&#189; cup water</li>
-<li>1 medium tomato, seeded and chopped</li>
-<li>1 carrot, peeled and chopped</li>
-<li>1 red bell pepper, seeded and chopped</li>
-<li>1 pound ground turkey</li>
-<li>1 egg white, beaten</li>
-<li>1 tablespoon chopped fresh oregano (or 1 teaspoon dried) </li>
-<li>&#189; teaspoon sea salt</li>
-<li>&#189;  teaspoons freshly ground black pepper</li>
-<li>1 tablespoon grapeseed oil</li>
-<li>1 cup plain Greek yogurt</li>
-<li>1 cup giardiniera (Italian pickled vegetables), chopped, liquid reserved</li>
-<li>1 romaine lettuce heart, finely chopped</li>
+<li>2 pounds lean ground beef, preferably ground sirloin</li>
+<li>1 teaspoon salt</li>
+<li>&#189; teaspoon freshly ground black pepper</li>
+<li>1&#189; cups grated sharp cheddar cheese</li>
+<li>&#189; pound bacon, chopped and cooked crisp, crumbled (optional)</li>
+<li>Vegetable oil, for brushing grill grates</li> 
+<li>4 fresh-baked hamburger buns</li>  
+<li>1 large sweet onion, preferably Vidalia, thinly sliced</li>
+<li>Romaine lettuce leaves, sliced tomatoes, ketchup, and mustard, as desired</li>
 </ul>
 <br><br>
 </div>
@@ -1259,15 +1254,15 @@ Makes 4 servings
 <span>Procedure</span>
 </div>
 <div class="recipe-details-procedure">
-Heat oven to 425&#176;F. Cut one of the pieces of naan in half; save remaining half for another use. Tear into small pieces and place in a small bowl with water.
+<i>The amazing, inside-out cheeseburger! Toppings and condiments go on the inside, so every bite is filled with melted cheese, caramelized onions, or whatever you like. Make &#8217;em awesome and easy with our Stuff-A-Burger&#8482; Set.</i>
 
-<br><br>Juice the tomato, carrot and bell pepper. Place the vegetable pulp in a large bowl with the turkey; reserve juice for another use. Add egg white, oregano, salt and pepper. 
+<br><br>Place ground beef in a large mixing bowl. Season with salt and pepper and mix gently to combine. Divide ground beef into four 8-ounce portions and divide again, making eight approximately 1-inch thick patties.
 
-<br><br>Squeeze excess water from soaking naan; add to the bowl with the turkey and mix well. Form the mixture into 16 balls.
+<br><br>Fill the Stuff-A-Burger Press with the seasoned ground beef. Press together firmly to seal the patty. Top the patty with the grated cheddar cheese and cooked bacon, if using. Top with another 1-inch thick patty and press down again. Pop sealed burger out and place in the grill basket. Repeat with other patties.
 
-<br><br>Heat oil in a large skillet over medium heat. Place meatballs in skillet and sear until golden, about 3 minutes. Flip meatballs over and place the skillet into the oven. Bake until meatballs reach 165&#176;F internal temperature, about 10 minutes. Wrap remaining 4 naan in aluminum foil and place in oven to warm for a few minutes. Meanwhile, combine yogurt and 2 tablespoons of giardiniera liquid. 
+<br><br>Prepare a moderate charcoal fire, preheat a gas grill to medium, or heat a large grill pan over medium heat. Brush grill grates or grill pan with a thin coating of oil using a silicone pastry brush. Grill the prepared hamburger patties approximately 3 to 4 minutes on each side for a medium-rare hamburger. Place the buns face down on the hot grill until lightly browned.
 
-<br><br>To assemble, spread about 2 tablespoons of yogurt sauce on each pita, top with 4 meatballs, chopped giardiniera and a handful of romaine.
+<br><br><i>To serve:</i> place the burger on the bottom of each bun and top each burger with sliced onion. Top with other condiments as desired. Cover with toasted bun tops and serve immediately.
 
 <br><br>
 </div>
@@ -1275,10 +1270,10 @@ Heat oven to 425&#176;F. Cut one of the pieces of naan in half; save remaining h
 </div>
 </div>
 <div class="recipe-col-2 hide-mobile">
-<h1 class="recipe-name">Turkey Meatball Naan’wich with Yogurt and Pickled Vegetables</h1>
+<h1 class="recipe-name">Cheddar and Bacon Stuffed Grilled Burgers</h1>
 
 <div class="recipe-author">
-By Tested and perfected in the Sur la Table kitchen
+By Recipe developed for Sur La Table&rsquo;s Cooking Classes
 </div>
 
 <div class="recipe-details-content">
@@ -1298,20 +1293,15 @@ Makes 4 servings
 </div>
 <div class="recipe-details-ingredients">
 <ul>
-<li>5 pieces whole-grain naan</li>
-<li>&#189; cup water</li>
-<li>1 medium tomato, seeded and chopped</li>
-<li>1 carrot, peeled and chopped</li>
-<li>1 red bell pepper, seeded and chopped</li>
-<li>1 pound ground turkey</li>
-<li>1 egg white, beaten</li>
-<li>1 tablespoon chopped fresh oregano (or 1 teaspoon dried) </li>
-<li>&#189; teaspoon sea salt</li>
-<li>&#189;  teaspoons freshly ground black pepper</li>
-<li>1 tablespoon grapeseed oil</li>
-<li>1 cup plain Greek yogurt</li>
-<li>1 cup giardiniera (Italian pickled vegetables), chopped, liquid reserved</li>
-<li>1 romaine lettuce heart, finely chopped</li>
+<li>2 pounds lean ground beef, preferably ground sirloin</li>
+<li>1 teaspoon salt</li>
+<li>&#189; teaspoon freshly ground black pepper</li>
+<li>1&#189; cups grated sharp cheddar cheese</li>
+<li>&#189; pound bacon, chopped and cooked crisp, crumbled (optional)</li>
+<li>Vegetable oil, for brushing grill grates</li> 
+<li>4 fresh-baked hamburger buns</li>  
+<li>1 large sweet onion, preferably Vidalia, thinly sliced</li>
+<li>Romaine lettuce leaves, sliced tomatoes, ketchup, and mustard, as desired</li>
 </ul>
 <br><br>
 </div>
@@ -1322,15 +1312,15 @@ Makes 4 servings
 <span>Procedure</span>
 </div>
 <div class="recipe-details-procedure">
-Heat oven to 425&#176;F. Cut one of the pieces of naan in half; save remaining half for another use. Tear into small pieces and place in a small bowl with water.
+<i>The amazing, inside-out cheeseburger! Toppings and condiments go on the inside, so every bite is filled with melted cheese, caramelized onions, or whatever you like. Make &#8217;em awesome and easy with our Stuff-A-Burger&#8482; Set.</i>
 
-<br><br>Juice the tomato, carrot and bell pepper. Place the vegetable pulp in a large bowl with the turkey; reserve juice for another use. Add egg white, oregano, salt and pepper. 
+<br><br>Place ground beef in a large mixing bowl. Season with salt and pepper and mix gently to combine. Divide ground beef into four 8-ounce portions and divide again, making eight approximately 1-inch thick patties.
 
-<br><br>Squeeze excess water from soaking naan; add to the bowl with the turkey and mix well. Form the mixture into 16 balls.
+<br><br>Fill the Stuff-A-Burger Press with the seasoned ground beef. Press together firmly to seal the patty. Top the patty with the grated cheddar cheese and cooked bacon, if using. Top with another 1-inch thick patty and press down again. Pop sealed burger out and place in the grill basket. Repeat with other patties.
 
-<br><br>Heat oil in a large skillet over medium heat. Place meatballs in skillet and sear until golden, about 3 minutes. Flip meatballs over and place the skillet into the oven. Bake until meatballs reach 165&#176;F internal temperature, about 10 minutes. Wrap remaining 4 naan in aluminum foil and place in oven to warm for a few minutes. Meanwhile, combine yogurt and 2 tablespoons of giardiniera liquid. 
+<br><br>Prepare a moderate charcoal fire, preheat a gas grill to medium, or heat a large grill pan over medium heat. Brush grill grates or grill pan with a thin coating of oil using a silicone pastry brush. Grill the prepared hamburger patties approximately 3 to 4 minutes on each side for a medium-rare hamburger. Place the buns face down on the hot grill until lightly browned.
 
-<br><br>To assemble, spread about 2 tablespoons of yogurt sauce on each pita, top with 4 meatballs, chopped giardiniera and a handful of romaine.
+<br><br><i>To serve:</i> place the burger on the bottom of each bun and top each burger with sliced onion. Top with other condiments as desired. Cover with toasted bun tops and serve immediately.
 
 <br><br>
 </div>
@@ -1433,6 +1423,409 @@ Heat oven to 425&#176;F. Cut one of the pieces of naan in half; save remaining h
 
 
 <div class="every-thing-you-need">
+
+<div class="clp-category-listing dlp-category-listing">
+<h2>These Are Perfect For This Recipe </h2>
+<div class="search-result-items tiles-container globalSlickSlider slick-four">
+
+<div class="grid-tile grid-tile-effect">
+
+
+
+
+
+
+
+
+
+
+<div class="product-tile" id="e126eb4d0c6098f1ab04019588" data-itemid="PRO-2566172"><!-- dwMarker="product" dwContentID="e126eb4d0c6098f1ab04019588" -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="wish-container">
+<input type="hidden" id="addedWishlistImage" value="/on/demandware.static/Sites-SLT-Site/-/default/dw2daf074c/images/Wishlist-added.svg" />
+<input type="hidden" id="notAddedWishlistImage" value="/on/demandware.static/Sites-SLT-Site/-/default/dw923f3383/images/Wishlist.svg" />
+<input type="hidden" id="firstItemSkuValue" value="6590327" />
+
+<input type="hidden" value="https://www.surlatable.com/wishlist-add-product?pid=6590327&amp;source=wishlist" id="wishlistUrl" class="PLPAddToWishUrl" />
+
+<input type="hidden" id="plpremoveFromWishlistUrl" value="https://www.surlatable.com/on/demandware.store/Sites-SLT-Site/default/Wishlist-DeleteItem?pid=6590327&amp;source=wishlist" />
+<input type="hidden" id="createNewWishlistUrl" value="https://www.surlatable.com/on/demandware.store/Sites-SLT-Site/default/Wishlist-AddWishlist?pid=6590327&amp;source="/>
+<input type="hidden" id="replaceWishlistUrl" value="https://www.surlatable.com/on/demandware.store/Sites-SLT-Site/default/Wishlist-ReplaceWishlist?pid=6590327&amp;source=productdetail"/>
+
+
+
+	<a class="button simple wish-list not-auth-wish" data-action="wishlist" href="https://www.surlatable.com/wishlist-add-product?pid=6590327&amp;source=productdetail" >
+		<img src="/on/demandware.static/Sites-SLT-Site/-/default/dw923f3383/images/Wishlist.svg" alt="Wish" class="wish-floating-button" />
+	</a>
+
+
+</div>
+
+
+
+<div class="product-image"><!-- dwMarker="product" dwContentID="e126eb4d0c6098f1ab04019588" -->
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="thumb-link" href="https://www.surlatable.com/stainless-steel-mixing-bowls/PRO-2566172.html" title="Sur La Table Stainless Steel Mixing Bowl">
+<span class='product-image-PLP'><img src="https://assets.surlatable.com/m/64c3a0c86615f280/thul-2566149_01i_0716_s.jpg" alt="Sur La Table Stainless Steel Mixing Bowl"/><span>
+</a>
+</div>
+
+
+<div class="product-name h4">
+<a class="name-link text-ellipsis" data-ellipsis="3" href="https://www.surlatable.com/stainless-steel-mixing-bowls/PRO-2566172.html" title="Go to Product: Sur La Table Stainless Steel Mixing Bowl">
+Sur La Table Stainless Steel Mixing Bowl
+</a>
+</div>
+
+
+
+
+
+<div class="product-pricing h4">
+<a class="name-link text-ellipsis" data-ellipsis="3" href="https://www.surlatable.com/stainless-steel-mixing-bowls/PRO-2566172.html" title="Go to Product: Sur La Table Stainless Steel Mixing Bowl">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="product-price">
+
+
+
+
+
+
+<span class="regular-price">$20.00 - $38.00</span>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</a>
+</div>
+
+
+
+
+
+
+
+<div class="product-promo">
+
+<div class="promotional-message c1">
+
+</div>
+
+</div>
+
+
+
+
+<div class="compare-review">
+
+
+
+<div class="product-review" data-pid="PRO-2566172">
+
+
+
+
+
+
+	<span class="TTratingBox TTrating-4-5"></span>
+	
+		<span class="TTreviewcount">(32)</span><br/>
+	
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div><!-- END: .product-tile -->
+
+</div>
+
+<div class="grid-tile grid-tile-effect">
+
+
+
+
+
+
+
+
+
+
+<div class="product-tile" id="cba981af2c51686dc33d04bb61" data-itemid="PRO-3019122"><!-- dwMarker="product" dwContentID="cba981af2c51686dc33d04bb61" -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="wish-container">
+<input type="hidden" id="addedWishlistImage" value="/on/demandware.static/Sites-SLT-Site/-/default/dw2daf074c/images/Wishlist-added.svg" />
+<input type="hidden" id="notAddedWishlistImage" value="/on/demandware.static/Sites-SLT-Site/-/default/dw923f3383/images/Wishlist.svg" />
+<input type="hidden" id="firstItemSkuValue" value="3019122" />
+
+<input type="hidden" value="https://www.surlatable.com/wishlist-add-product?pid=3019122&amp;source=wishlist" id="wishlistUrl" class="PLPAddToWishUrl" />
+
+<input type="hidden" id="plpremoveFromWishlistUrl" value="https://www.surlatable.com/on/demandware.store/Sites-SLT-Site/default/Wishlist-DeleteItem?pid=3019122&amp;source=wishlist" />
+<input type="hidden" id="createNewWishlistUrl" value="https://www.surlatable.com/on/demandware.store/Sites-SLT-Site/default/Wishlist-AddWishlist?pid=3019122&amp;source="/>
+<input type="hidden" id="replaceWishlistUrl" value="https://www.surlatable.com/on/demandware.store/Sites-SLT-Site/default/Wishlist-ReplaceWishlist?pid=3019122&amp;source=productdetail"/>
+
+
+
+	<a class="button simple wish-list not-auth-wish" data-action="wishlist" href="https://www.surlatable.com/wishlist-add-product?pid=3019122&amp;source=productdetail" >
+		<img src="/on/demandware.static/Sites-SLT-Site/-/default/dw923f3383/images/Wishlist.svg" alt="Wish" class="wish-floating-button" />
+	</a>
+
+
+</div>
+
+
+
+<div class="product-image"><!-- dwMarker="product" dwContentID="cba981af2c51686dc33d04bb61" -->
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="thumb-link" href="https://www.surlatable.com/le-creuset-jewel-basting-brush/PRO-3019122.html" title="Le Creuset Craft Basting Brushes">
+<span class='product-image-PLP'><img src="https://assets.surlatable.com/m/1e911783599e9e3c/thul-3019122_01i_0717_s.jpg" alt="Le Creuset Craft Basting Brushes"/><span>
+</a>
+</div>
+
+
+<div class="product-name h4">
+<a class="name-link text-ellipsis" data-ellipsis="3" href="https://www.surlatable.com/le-creuset-jewel-basting-brush/PRO-3019122.html" title="Go to Product: Le Creuset Craft Basting Brushes">
+Le Creuset Craft Basting Brushes
+</a>
+</div>
+
+
+
+
+
+<div class="product-pricing h4">
+<a class="name-link text-ellipsis" data-ellipsis="3" href="https://www.surlatable.com/le-creuset-jewel-basting-brush/PRO-3019122.html" title="Go to Product: Le Creuset Craft Basting Brushes">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="product-price">
+
+
+
+
+
+
+
+
+
+
+
+<span class="regular-price">$14.00</span>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</a>
+</div>
+
+
+
+
+
+
+
+<div class="product-promo">
+
+<div class="promotional-message c1">
+
+</div>
+
+</div>
+
+
+
+
+<div class="compare-review">
+
+
+
+<div class="product-review" data-pid="PRO-3019122">
+
+
+
+
+
+
+	<span class="TTratingBox TTrating-5-0"></span>
+	
+		<span class="TTreviewcount">(11)</span><br/>
+	
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div><!-- END: .product-tile -->
+
+</div>
+
+</div>
+</div>
 
 </div>
 
@@ -2169,7 +2562,7 @@ globalData = {"user":[{"profile":[{"profileInfo":{"customerType":"customer","sec
 
 
 <script type="text/javascript">
-pageData = {"page":{"pageInfo":{"breadCrumbs":["Home","Recipes"],"pageName":"rdp: Turkey Meatball Naan’wich with Yogurt and Pickled Vegetables","referringURL":"https://www.google.com/"},"category":{"pageType":"recipe detail","categoryID":"recipes","primaryCategory":"Recipes","hierarchy":"Home,Recipes"},"listing":{}},"pageContext":"product","product":[{"productInfo":{"productID":"REC-351157","sku":"","brand":"","productName":"Turkey Meatball Naan’wich with Yogurt and Pickled Vegetables","storeId":"","classDate":"","startTime":"","restrictions":"","format":"","seats":"","price":"","category":"WRC-429218","variant":""},"category":{"primaryCategory":"Sandwiches","subCategory1":"","subCategory2":"","productType":"Recipe"},"skuVariant":{}}]};
+pageData = {"page":{"pageInfo":{"breadCrumbs":["Home","Recipes"],"pageName":"rdp: Cheddar and Bacon Stuffed Grilled Burgers","referringURL":"https://www.google.com/"},"category":{"pageType":"recipe detail","categoryID":"recipes","primaryCategory":"Recipes","hierarchy":"Home,Recipes"},"listing":{}},"pageContext":"product","product":[{"productInfo":{"productID":"REC-215719","sku":"","brand":"","productName":"Cheddar and Bacon Stuffed Grilled Burgers","storeId":"","classDate":"","startTime":"","restrictions":"","format":"","seats":"","price":"","category":"WRC-429218","variant":""},"category":{"primaryCategory":"Sandwiches","subCategory1":"","subCategory2":"","productType":"Recipe"},"skuVariant":{}}]};
 </script>
 <script type="text/javascript">
 //Push page specific data to GTM if exists
@@ -2314,9 +2707,9 @@ window.User = {"zip":null,"storeId":null};
 
 
 
-<script>pageContext = {"title":"Turkey Meatball Naan’wich with Yogurt and Pickled Vegetables","type":"product","ns":"product"};</script>
+<script>pageContext = {"title":"Cheddar and Bacon Stuffed Grilled Burgers","type":"product","ns":"product"};</script>
 <script>
-var meta = "Check out Turkey Meatball Naan&rsquo;wich with Yogurt and Pickled Vegetables recipe and more from Sur La Table!";
+var meta = "Check out Cheddar and Bacon Stuffed Grilled Burgers recipe and more from Sur La Table!";
 var keywords = "";
 </script>
 <script type="text/javascript">
@@ -2357,9 +2750,9 @@ window.EmarsysPreferences = {"enabled":true,"trackingJsEnabled":false};
 	<script type="text/javascript" src="/on/demandware.static/Sites-SLT-Site/-/default/v1662336170876/js/turntopdp.js"></script>
 
 	<script type="text/javascript">
-	var TurnToItemSku = "REC-351157";
-	var TurnToChatterSku = "REC-351157";
-	var TurnToGallerySkus= ["REC-351157"];
+	var TurnToItemSku = "REC-215719";
+	var TurnToChatterSku = "REC-215719";
+	var TurnToGallerySkus= ["REC-215719"];
 	var TurnToReviewsEnable = true;
 	var TurnToQAEnable = true;
 	var TurnToVisualGalleryEnable = true;
@@ -2442,7 +2835,7 @@ window.EmarsysPreferences = {"enabled":true,"trackingJsEnabled":false};
 </script>
 
 
-	<script type="text/javascript" src="//static.www.turnto.com/sitedata/vZsv4B7pMmG7eLgsite/v4_3/REC-351157/d/itemjs"></script>
+	<script type="text/javascript" src="//static.www.turnto.com/sitedata/vZsv4B7pMmG7eLgsite/v4_3/REC-215719/d/itemjs"></script>
 
 
 
