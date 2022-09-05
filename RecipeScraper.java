@@ -1,13 +1,13 @@
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.concurrent.RunnableScheduledFuture;
 import java.util.concurrent.TimeUnit;
-import java.io.*;
 
 public class RecipeScraper {
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -58,6 +58,8 @@ public class RecipeScraper {
 			}
 		}
 
+		stringReader.close();
+
 		return recipeLinks;
 	}
 
@@ -71,40 +73,22 @@ public class RecipeScraper {
 			.build();
 			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
+			// TEMP CODE TO PRINT HTML OF PAGE
+			FileOutputStream fs = new FileOutputStream("ioFiles\\tempOutput.txt");
+			PrintWriter pw = new PrintWriter(fs);
+			pw.println(response.body());
+			pw.close();
+			// ===============================
+
 			String htmlString = response.body();
 
 			recipes.add(new Recipe(htmlString));
 
-			TimeUnit.SECONDS.sleep(10);
+			TimeUnit.SECONDS.sleep(2);
 		}
 	}
 
-	// private static String getBreadCrumb(String htmlString) {
-		
-	// 	Scanner stringReader = new Scanner(htmlString);
-	// 	String breadCrumb = "";
-	// 	while (stringReader.hasNext()) {
-	// 		String result = stringReader.nextLine();
-	// 		String temp = "";
-
-	// 		if (result.startsWith("<a class=\"breadcrumb-element\"")) {
-	// 			// System.out.println(result);
-	// 			temp += result.split("\"")[5];
-	// 			breadCrumb += temp + " \\ ";
-	// 			breadCrumb = breadCrumb.replaceAll("&amp;", "&");
-	// 		} else if (result.startsWith("<h1 class=\"recipe-name\">")) {
-	// 			// System.out.println(result);
-	// 			temp += result.split(">")[1];
-	// 			temp = temp.substring(0, temp.length() - 4);
-	// 			breadCrumb += temp;
-	// 			breadCrumb = breadCrumb.replaceAll("Quick &#38;", "");
-	// 			break;
-	// 		}
-	// 	}
-
-	// 	System.out.println(breadCrumb);
-	// 	return breadCrumb;
-	// }
+	
 }
 
 

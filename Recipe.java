@@ -1,53 +1,122 @@
+import java.util.Scanner;
+
+
 public class Recipe {
 	private String name;
-	private String path;
-	private String ingredients;
+	private String path = "";
+	private String ingredients = "";
 	private String instructions;
-	private String servings;
+	private String servings = "";
 	private String htmlString;
 
 	public Recipe(String htmlString) {
 		this.htmlString = htmlString;
 		
-		this.name = parseName();
-		this.path = parsePath();
-		this.ingredients = parseIngredients();
-		this.instructions = parseInstructions();
-		this.servings = parseServings();
-
+		parsePathAndName();
+		parseServings();
+		parseIngredients();
+		parseInstructions();
+		
 		System.out.println(this);
 	}
 
-	private String parseName() {
-		String name = "";
 
-		return name;
+	private void parsePathAndName() {
+
+		Scanner stringReader = new Scanner(htmlString);
+
+		// This while loop scans the htmlString looking for the path and name of the recipe
+		//   It is entirely comprised of string manipulation and scanning
+		while (stringReader.hasNext()) {
+			String result = stringReader.nextLine();
+			String temp = "";
+
+			// This if condition is checking for a prefix found before each path element
+			if (result.startsWith("<a class=\"breadcrumb-element\"")) {
+				// System.out.println(result);
+				temp += result.split("\"")[5];
+				temp = temp.substring(6);
+				this.path += temp + " \\ ";
+				this.path = path.replaceAll("&amp;", "&");
+
+			// This is condition is checking for a prefix found before each name element
+			} else if (result.startsWith("<h1 class=\"recipe-name\">")) {
+				temp += result.split(">")[1];
+				temp = temp.substring(0, temp.length() - 4);
+
+				// These lines are used to get rid of unneeded characters sequences within the string
+				temp = temp.replaceAll("Quick &#38;", "");
+				temp = temp.replaceAll("&#8212;", "");
+				temp = temp.replaceAll("&#8221;", "");
+				temp = temp.replaceAll("&#8220;", "");
+				temp = temp.replaceAll("&#232;", "");
+
+				// The path also containes the name of the recipe
+				this.path += temp; 
+				
+				name = temp;
+				
+				// Once the name of the recipe is retrieved, we can break out of the loop
+				break;
+			}
+		}
+
+		stringReader.close();
 	}
 
-	private String parsePath() {
-		String path = "";
+	private void parseIngredients() {
+		Scanner stringReader = new Scanner(htmlString);
 
-		return path;
+		while (stringReader.hasNext()) {
+			String result = stringReader.nextLine();
+			if (result.contains("recipe-details-ingredients")) {
+				
+				// while (!stringReader.nextLine().startsWith("</ul>")) {
+				while (!result.startsWith("</ul>")) {
+					result = stringReader.nextLine();
+					ingredients += result + "\n";
+				}
+				ingredients = ingredients.replaceAll("<li>|</li>|<i>|</i>|<ul>|</ul>|<b>|</b>", "");
+				ingredients = ingredients.replaceAll("<br>", "\n");
+				
+				break;
+			}
+		}
+
+
+		stringReader.close();
 	}
 
-	private String parseIngredients() {
-		String ingredients = "";
+	private void parseInstructions() {
 
-		return ingredients;
 	}
 
-	private String parseInstructions() {
-		String instructions = "";
+	private void parseServings() {
+		Scanner stringReader = new Scanner(htmlString);
 
-		return instructions;
+		// This while loop scans the htmlString looking for the servings of the recipe
+		//   It is entirely comprised of string manipulation and scanning
+		while (stringReader.hasNext()) {
+			String result = stringReader.nextLine();
+			String temp = "";
+
+			// This if condition is checking for a prefix found before each path element
+			if (result.startsWith("<div class=\"recipe-details-serves\"")) {
+				servings = stringReader.nextLine();
+				// System.out.println(result);
+				// temp += result.split(">")[0];
+				// temp = temp.substring(0, temp.length() - 6);
+
+			// Once the name of the recipe is retrieved, we can break out of the loop
+				break;
+			}
+		}
+
+		if (servings.equals("")) 
+			servings = "Not listed";
+
+		stringReader.close();
 	}
-
-	private String parseServings() {
-		String servings = "";
-
-		return servings;
-	}
-
 
 	public String getName() {
 		return this.name;
@@ -99,13 +168,10 @@ public class Recipe {
 
 	@Override
 	public String toString() {
-		return "{" +
-			" name='" + getName() + "'" +
-			", path='" + getPath() + "'" +
-			", ingredients='" + getIngredients() + "'" +
-			", instructions='" + getInstructions() + "'" +
-			", servings='" + getServings() + "'" +
-			", htmlString='" + getHtmlString() + "'" +
-			"}";
+		return "Name:   " + this.name + "\n" +
+				"Path:   " + this.path + "\n" +
+				"Serves: " + this.servings + "\n\n" +
+				"Ingredients: " + this.ingredients + "\n\n" +
+				"Instructions: " + this.instructions + "\n\n";
 	}
 }
