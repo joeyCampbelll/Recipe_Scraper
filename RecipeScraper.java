@@ -6,20 +6,22 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+// This is the main class to handle the entire program
 public class RecipeScraper {
     public static void main(String[] args) throws IOException, InterruptedException {
 		runScraper();
     }
 
 	private static void runScraper() throws IOException, InterruptedException {
-		// String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24", 
-		// 					"https://www.surlatable.com/recipes/?srule=best-matches&start=24&sz=24", 
-		// 					"https://www.surlatable.com/recipes/?srule=best-matches&start=48&sz=24", 
-		// 					"https://www.surlatable.com/recipes/?srule=best-matches&start=72&sz=24" };
-		String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24" };
+		String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24", 
+							"https://www.surlatable.com/recipes/?srule=best-matches&start=24&sz=24", 
+							"https://www.surlatable.com/recipes/?srule=best-matches&start=48&sz=24", 
+							"https://www.surlatable.com/recipes/?srule=best-matches&start=72&sz=24" };
+		// String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24" };
 		
 		// This is the main ArrayList of type Recipe which is an object encapsulating recipe information
 		ArrayList<Recipe> recipes = new ArrayList<Recipe>();
@@ -41,7 +43,20 @@ public class RecipeScraper {
 			getRecipeInformation(recipeLinks, recipes);
 		}
 
-		System.out.println(recipes.size());
+		List<String[]> dataLines = new ArrayList<>();
+
+		for (Recipe recipe : recipes) {
+			dataLines.add(new String[] {
+				recipe.getName(),
+				recipe.getPath(),
+				recipe.getServings(),
+				recipe.getIngredients(),
+				recipe.getInstructions()
+			});
+		}
+
+		CSVWriter writer = new CSVWriter(dataLines, "ioFiles\\recipes.csv");
+		writer.writeCSV();
 	}
 
 	// This method parses the webpage of recipe tiles, returning a list of recipe links
@@ -57,6 +72,7 @@ public class RecipeScraper {
 				result = result.substring(28);
 				result = result.split("\"")[0];
 				recipeLinks.add(result);
+				
 			}
 		}
 
@@ -65,6 +81,7 @@ public class RecipeScraper {
 		return recipeLinks;
 	}
 
+	// This is the method that controls the scraping of each individual recipe 
 	private static void getRecipeInformation(ArrayList<String> recipeLinks, ArrayList<Recipe> recipes) throws IOException, InterruptedException{
 		// Loop through each recipe and gather necessary recipe data
 		for (String recipeLink : recipeLinks) {
@@ -74,13 +91,6 @@ public class RecipeScraper {
 			.GET() // GET is default
 			.build();
 			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-
-			// TEMP CODE TO PRINT HTML OF PAGE
-			FileOutputStream fs = new FileOutputStream("ioFiles\\tempOutput.txt");
-			PrintWriter pw = new PrintWriter(fs);
-			pw.println(response.body());
-			pw.close();
-			// ===============================
 
 			String htmlString = response.body();
 
@@ -92,16 +102,3 @@ public class RecipeScraper {
 
 	
 }
-
-
-		// OLD CODE TO OUTPUT HTML RESPONSE TO FILE
-		
-		// //output to a file so its easy to mess with (you won’t be for your finished program)
-		// FileOutputStream fs = new FileOutputStream("ioFiles\\tempOutput.txt");
-		// PrintWriter pw = new PrintWriter(fs);
-		// //response.body() is the html source code in a string  format. It outputs to a file so you 
-		// // can see it easier right now, but you will ultimately want to just manipulate the strings a lot
-        // pw.println(response.body());
-        // pw.close();
-
-		// ===================

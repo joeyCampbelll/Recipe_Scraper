@@ -21,9 +21,12 @@ public class Recipe {
 
 		// Used for debugging
 		System.out.println(this);
+
+		ingredients = ingredients.trim();
+		instructions = instructions.trim();
+
 	}
 	
-
 	private void parsePathAndName() {
 
 		Scanner stringReader = new Scanner(htmlString);
@@ -70,6 +73,10 @@ public class Recipe {
 			// This line marks the beginning of the ingredients div
 			if (result.contains("recipe-details-ingredients")) {
 				
+				while (!result.contains("<ul")) {
+					result = stringReader.nextLine();
+				}
+
 				// All ingredients start and end with an unordered list tag
 				//   Therefore, I read each line until I see the closing tag
 				while (!result.startsWith("</div>")) {
@@ -96,7 +103,7 @@ public class Recipe {
 
 			// This line marks the beginning of the ingredients div
 			if (result.contains("recipe-details-procedure")) {
-				
+
 				// Exits the loop once the first closing div is reached
 				while (!result.startsWith("</div>")) {
 					result = stringReader.nextLine();
@@ -124,9 +131,6 @@ public class Recipe {
 			// This if condition is checking for a prefix found before each path element
 			if (result.startsWith("<div class=\"recipe-details-serves\"")) {
 				servings = stringReader.nextLine();
-				// System.out.println(result);
-				// temp += result.split(">")[0];
-				// temp = temp.substring(0, temp.length() - 6);
 
 			// Once the name of the recipe is retrieved, we can break out of the loop
 				break;

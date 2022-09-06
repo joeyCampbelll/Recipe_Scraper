@@ -28,8 +28,8 @@
 
 
 
-<title>Seared Salmon With Saffron Hollandaise Recipe | Sur La Table</title>
-<meta name="description" content=" Check out Seared Salmon With Saffron Hollandaise recipe and more from Sur La Table!"/>
+<title>Beef Bourguignon from Instant Pot Recipe | Sur La Table</title>
+<meta name="description" content=" Check out Beef Bourguignon from Instant Pot recipe and more from Sur La Table!"/>
 
 
 <link href="/on/demandware.static/Sites-SLT-Site/-/default/dw8e83e6e2/images/favicon.ico" rel="shortcut icon" />
@@ -37,7 +37,7 @@
 
 
 
-<meta name="keywords" content=" Le Creuset Sur La Table"/>
+<meta name="keywords" content="  Sur La Table"/>
 
 
 
@@ -241,7 +241,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 
 
 
-<link rel="canonical" href="https://www.surlatable.com/seared-salmon-with-saffron-hollandaise/REC-490919.html" />
+<link rel="canonical" href="https://www.surlatable.com/beef-bourguignon-from-instant-pot/REC-354055.html" />
 
 
 
@@ -261,10 +261,10 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 
 
 
-<meta property="og:image" content="https://assets.surlatable.com/m/167eef09c1df4780/webimage-6824197_0821_p.jpg"/>
-<meta property="og:url" content="https://www.surlatable.com/seared-salmon-with-saffron-hollandaise/REC-490919.html"/>
-<meta property="og:title" content="Seared Salmon With Saffron Hollandaise Recipe | Sur La Table"/>
-<meta property="og:description" content="Check out Seared Salmon With Saffron Hollandaise recipe and more from Sur La Table!"/>
+<meta property="og:image" content="https://assets.surlatable.com/m/623622df627588a/webimage-ven_REC-354055_Beef_Bourguignon.jpg"/>
+<meta property="og:url" content="https://www.surlatable.com/beef-bourguignon-from-instant-pot/REC-354055.html"/>
+<meta property="og:title" content="Beef Bourguignon from Instant Pot Recipe | Sur La Table"/>
+<meta property="og:description" content="Check out Beef Bourguignon from Instant Pot recipe and more from Sur La Table!"/>
 <meta property="og:type" content="product"/>
 <meta property="og:site_name" content="Sur La Table" />
 
@@ -991,7 +991,7 @@ Sign In
 
 <script type="text/javascript">//<!--
 /* <![CDATA[ (viewCategory-active_data.js) */
-dw.ac.applyContext({category: "WRC-429208"});
+dw.ac.applyContext({category: "WRC-429205"});
 /* ]]> */
 // -->
 </script>
@@ -1013,14 +1013,14 @@ dw.ac.applyContext({category: "WRC-429208"});
 
 
 
-<a class="breadcrumb-element" href="https://www.surlatable.com/recipes/main-courses/seafood/" title="Go to Seafood">Seafood</a>
+<a class="breadcrumb-element" href="https://www.surlatable.com/recipes/main-courses/meat/" title="Go to Meat">Meat</a>
 
 
 
 
 
 
-<span class="breadcrumb-element">Seared Salmon With Saffron Hollandaise</span>
+<span class="breadcrumb-element">Beef Bourguignon from Instant Pot</span>
 
 
 
@@ -1029,7 +1029,7 @@ dw.ac.applyContext({category: "WRC-429208"});
 {
 "@context":"https://schema.org/",
 "@type":"BreadcrumbList",
-"itemListElement": [{"@type":"ListItem","position":1,"item":{"@id":"https://www.surlatable.com/home","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.surlatable.com/recipes/","name":"Recipes"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.surlatable.com/recipes/main-courses/","name":"Main Courses"}},{"@type":"ListItem","position":4,"item":{"@id":"https://www.surlatable.com/recipes/main-courses/seafood/","name":"Seafood"}}]
+"itemListElement": [{"@type":"ListItem","position":1,"item":{"@id":"https://www.surlatable.com/home","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.surlatable.com/recipes/","name":"Recipes"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.surlatable.com/recipes/main-courses/","name":"Main Courses"}},{"@type":"ListItem","position":4,"item":{"@id":"https://www.surlatable.com/recipes/main-courses/meat/","name":"Meat"}}]
 }
 </script>
 </div>
@@ -1134,7 +1134,7 @@ dw.ac.applyContext({category: "WRC-429208"});
 		if(window.CQuotient) {
 			var cq_params = {};
 			cq_params.product = {
-					id: 'REC-490919',
+					id: 'REC-354055',
 					sku: '',
 					type: '',
 					alt_id: ''
@@ -1151,17 +1151,17 @@ dw.ac.applyContext({category: "WRC-429208"});
 </script>
 <script type="text/javascript">//<!--
 /* <![CDATA[ (viewProduct-active_data.js) */
-dw.ac._capture({id: "REC-490919", type: "detail"});
+dw.ac._capture({id: "REC-354055", type: "detail"});
 /* ]]> */
 // -->
 </script>
 <div class="recipe-detail-page">
 
 <div class="recipe-col-2-mobileonly hide-desktop">
-<h1 class="recipe-name">Seared Salmon With Saffron Hollandaise</h1>
+<h1 class="recipe-name">Beef Bourguignon from Instant Pot</h1>
 
 <div class="recipe-author">
-By Tested and perfected in the Sur la Table kitchen
+By Instant Pot
 </div>
 
 </div>
@@ -1188,9 +1188,9 @@ By Tested and perfected in the Sur la Table kitchen
 
 
 
-<a href=https://assets.surlatable.com/m/167eef09c1df4780/webimage-6824197_0821_p.jpg target=_blank class="product-image main-image single-image" title="Seared Salmon With Saffron Hollandaise">
+<a href=https://assets.surlatable.com/m/623622df627588a/webimage-ven_REC-354055_Beef_Bourguignon.jpg target=_blank class="product-image main-image single-image" title="Beef Bourguignon from Instant Pot">
 <span class='product-image-PDPMain'>
-<img class="primary-image" src="https://assets.surlatable.com/m/167eef09c1df4780/webimage-6824197_0821_p.jpg" alt="Seared Salmon With Saffron Hollandaise"/>
+<img class="primary-image" src="https://assets.surlatable.com/m/623622df627588a/webimage-ven_REC-354055_Beef_Bourguignon.jpg" alt="Beef Bourguignon from Instant Pot"/>
 </span>
 </a>
 </div>
@@ -1207,7 +1207,7 @@ By Tested and perfected in the Sur la Table kitchen
     {
       "@context": "https://schema.org",
       "@type": "Restaurant",
-      "image":"https://assets.surlatable.com/m/167eef09c1df4780/webimage-6824197_0821_p.jpg",
+      "image":"https://assets.surlatable.com/m/623622df627588a/webimage-ven_REC-354055_Beef_Bourguignon.jpg",
       "@id": "null",
       "name": "Sur La Table",
       "address": {
@@ -1235,8 +1235,8 @@ By Tested and perfected in the Sur la Table kitchen
     {
       "@context": "https://schema.org/",
       "@type": "Recipe",
-      "name": "Seared Salmon With Saffron Hollandaise",
-      "image":"https://assets.surlatable.com/m/167eef09c1df4780/webimage-6824197_0821_p.jpg"
+      "name": "Beef Bourguignon from Instant Pot",
+      "image":"https://assets.surlatable.com/m/623622df627588a/webimage-ven_REC-354055_Beef_Bourguignon.jpg"
     }
 
     </script>
@@ -1251,7 +1251,7 @@ By Tested and perfected in the Sur la Table kitchen
 <span>Serves</span>
 </div>
 <div class="recipe-details-serves">
-Yield: 4 servings
+Makes 7 servings
 </div>
 
 
@@ -1260,28 +1260,23 @@ Yield: 4 servings
 <span>Ingredients</span>
 </div>
 <div class="recipe-details-ingredients">
-Seared salmon: 
 <ul>
-<li>4 (6-ounce) salmon fillets, pin bones removed</li>
-<li>Sea salt and freshly ground black pepper</li>
-<li>1 tablespoon vegetable oil</li>
+<li>&#188; cup (about 1.1 ounces) all-purpose flour</li>
+<li>&#189; teaspoon salt</li>
+<li>&#189; teaspoon freshly ground black pepper</li>
+<li>1&#189;  pounds boneless chuck roast, trimmed and cut into 1-inch cubes </li>
+<li>2  bacon slices, diced</li>
+<li>&#189;  cup dry red wine</li>
+<li>1 (10&#189;-ounce) can beef broth</li>
+<li>3 cups baby carrots (about &#190; pound) </li>
+<li>2 cups sliced shiitake mushroom caps (about &#189; pound) </li>
+<li>2 teaspoons dried thyme</li>
+<li>6 shallots, halved (about &#189; pound) </li>
+<li>4 garlic cloves, thinly sliced</li>
+<li>7 cups hot cooked medium egg noodles (about 5 cups uncooked pasta) </li>
+<li>Thyme leaves (optional) </li>
 </ul>
-<br>
-
-Saffron hollandaise:
-<ul>
-<li>1/4 cup dry white wine</li>
-<li>1/4 cup white wine vinegar</li>
-<li>1 medium shallot, minced</li>
-<li>1 teaspoon black peppercorns</li>
-<li>1/8 teaspoon saffron threads steeped in 1 tablespoon warm water</li>
-<li>3 large egg yolks</li>
-<li>2 sticks (8 ounces) unsalted butter, melted </li>
-<li>Sea salt</li> 
-<li>2 teaspoons fresh lemon juice, plus more as needed  </li>
-<li>1 tablespoon minced chives</li>
-</ul>
-<br>
+<br><br>
 </div>
 
 
@@ -1290,26 +1285,24 @@ Saffron hollandaise:
 <span>Procedure</span>
 </div>
 <div class="recipe-details-procedure">
-To prepare the salmon: Season fillets generously on both sides with salt and pepper. To a large nonstick skillet set over medium-high heat, add oil. When oil is shimmering, add the salmon fillets, flesh side down, and sear on both sides until nicely browned and the flesh is no longer translucent in the thickest part of the fillet, 3 to 5 minutes per side. Remove salmon from skillet and place on a large plate; tent with foil to keep warm while you prepare the sauce. 
+<i>This classic French stew is perfect cold-weather fare and is delicious over noodles or mashed potatoes. This recipe was designed for use with the 6-quart Instant Pot Ultra.</i>
 
-<br><br>To prepare the sauce: In a small saucepan, combine wine, vinegar, shallots, and peppercorns; cook until nearly dry. You should have about 1 tablespoon of liquid. Cool the reduction to room temperature, then strain through a fine mesh sieve into a medium heatproof bowl and combine with the saffron water. 
+<br><br>Weigh or lightly spoon flour into a dry measuring cup; level with a knife. Combine flour, salt, and pepper in a large zip-top plastic bag. Add beef; seal and shake to coat.
 
-<br><br>To prepare the egg mixture: To a medium saucepan, add water to reach 2 inches, and bring to a simmer. Add egg yolks to the bowl with the reduction and place the bowl over the simmering water, whisking constantly. To avoid overcooking the mixture, be sure that the water is barely simmering with no visible signs of surface action, just steam rising. As the egg yolks warm, they increase in volume. If they become too warm and begin to coagulate around the sides and bottom, remove from heat and cool slightly.
+<br><br>Remove lid from a 6-quart Instant Pot. Press [Saut&#233;], and use [Adjust] to select &#34;More&#34; mode. Place bacon in cooker, and cook, stirring constantly, 30 seconds. Add half of beef mixture to cooker; cook 5 minutes, browning on all sides. Remove beef and bacon from cooker. Repeat procedure with remaining beef mixture. Turn cooker off. Return cooked beef and bacon to cooker. Stir in wine and broth, scraping inner pot to loosen browned bits. Add carrots and next 4 ingredients (through garlic). 
 
-<br><br>To prepare the hollandaise: When the yolks have tripled in volume and the mixture thickly coats the back of a spoon, after about 5 minutes, remove the bowl from the simmering water. Stabilize the bowl and begin adding the melted butter in a slow, thin stream, whisking constantly as it is incorporated. The sauce will begin to thicken as more butter is added. When the hollandaise is thick, velvety, and coats the back of a spoon, add the lemon juice and taste and adjust seasoning with salt and additional lemon juice as needed. If too thick, add a little warm water to thin the consistency.
+<br><br>Close and lock the lid of the Instant Pot. Turn the steam release handle to &#34;Sealing&#34; position. Press [Manual]; select &#34;High Pressure,&#34; and use [-] or [+] to choose 23 minutes pressure cooking time. When time is up, turn cooker off. Open the cooker using Quick Pressure Release. Serve beef mixture over noodles. Garnish with thyme leaves, if desired.
 
-<br><br>If the sauce starts to break: It could be one of two things: either the butter was added too quickly, or the egg mixture got too hot (scrambled eggs). To rescue a broken sauce, try adding a small amount of boiling water and whisking until the sauce is smooth before adding more butter, or add another egg yolk to a clean bowl and set back over simmering water; whisk until thickened and using a fine mesh strainer to catch the scrambled egg, slowly strain the broken hollandaise gradually into the new egg yolk.
-
-<br><br>To serve: Place each salmon fillet on a warmed dinner plate and spoon hollandaise on top of each portion. Garnish with minced chives and serve immediately.
+<br><br>
 </div>
 
 </div>
 </div>
 <div class="recipe-col-2 hide-mobile">
-<h1 class="recipe-name">Seared Salmon With Saffron Hollandaise</h1>
+<h1 class="recipe-name">Beef Bourguignon from Instant Pot</h1>
 
 <div class="recipe-author">
-By Tested and perfected in the Sur la Table kitchen
+By Instant Pot
 </div>
 
 <div class="recipe-details-content">
@@ -1319,7 +1312,7 @@ By Tested and perfected in the Sur la Table kitchen
 <span>Serves</span>
 </div>
 <div class="recipe-details-serves">
-Yield: 4 servings
+Makes 7 servings
 </div>
 
 
@@ -1328,28 +1321,23 @@ Yield: 4 servings
 <span>Ingredients</span>
 </div>
 <div class="recipe-details-ingredients">
-Seared salmon: 
 <ul>
-<li>4 (6-ounce) salmon fillets, pin bones removed</li>
-<li>Sea salt and freshly ground black pepper</li>
-<li>1 tablespoon vegetable oil</li>
+<li>&#188; cup (about 1.1 ounces) all-purpose flour</li>
+<li>&#189; teaspoon salt</li>
+<li>&#189; teaspoon freshly ground black pepper</li>
+<li>1&#189;  pounds boneless chuck roast, trimmed and cut into 1-inch cubes </li>
+<li>2  bacon slices, diced</li>
+<li>&#189;  cup dry red wine</li>
+<li>1 (10&#189;-ounce) can beef broth</li>
+<li>3 cups baby carrots (about &#190; pound) </li>
+<li>2 cups sliced shiitake mushroom caps (about &#189; pound) </li>
+<li>2 teaspoons dried thyme</li>
+<li>6 shallots, halved (about &#189; pound) </li>
+<li>4 garlic cloves, thinly sliced</li>
+<li>7 cups hot cooked medium egg noodles (about 5 cups uncooked pasta) </li>
+<li>Thyme leaves (optional) </li>
 </ul>
-<br>
-
-Saffron hollandaise:
-<ul>
-<li>1/4 cup dry white wine</li>
-<li>1/4 cup white wine vinegar</li>
-<li>1 medium shallot, minced</li>
-<li>1 teaspoon black peppercorns</li>
-<li>1/8 teaspoon saffron threads steeped in 1 tablespoon warm water</li>
-<li>3 large egg yolks</li>
-<li>2 sticks (8 ounces) unsalted butter, melted </li>
-<li>Sea salt</li> 
-<li>2 teaspoons fresh lemon juice, plus more as needed  </li>
-<li>1 tablespoon minced chives</li>
-</ul>
-<br>
+<br><br>
 </div>
 
 
@@ -1358,17 +1346,15 @@ Saffron hollandaise:
 <span>Procedure</span>
 </div>
 <div class="recipe-details-procedure">
-To prepare the salmon: Season fillets generously on both sides with salt and pepper. To a large nonstick skillet set over medium-high heat, add oil. When oil is shimmering, add the salmon fillets, flesh side down, and sear on both sides until nicely browned and the flesh is no longer translucent in the thickest part of the fillet, 3 to 5 minutes per side. Remove salmon from skillet and place on a large plate; tent with foil to keep warm while you prepare the sauce. 
+<i>This classic French stew is perfect cold-weather fare and is delicious over noodles or mashed potatoes. This recipe was designed for use with the 6-quart Instant Pot Ultra.</i>
 
-<br><br>To prepare the sauce: In a small saucepan, combine wine, vinegar, shallots, and peppercorns; cook until nearly dry. You should have about 1 tablespoon of liquid. Cool the reduction to room temperature, then strain through a fine mesh sieve into a medium heatproof bowl and combine with the saffron water. 
+<br><br>Weigh or lightly spoon flour into a dry measuring cup; level with a knife. Combine flour, salt, and pepper in a large zip-top plastic bag. Add beef; seal and shake to coat.
 
-<br><br>To prepare the egg mixture: To a medium saucepan, add water to reach 2 inches, and bring to a simmer. Add egg yolks to the bowl with the reduction and place the bowl over the simmering water, whisking constantly. To avoid overcooking the mixture, be sure that the water is barely simmering with no visible signs of surface action, just steam rising. As the egg yolks warm, they increase in volume. If they become too warm and begin to coagulate around the sides and bottom, remove from heat and cool slightly.
+<br><br>Remove lid from a 6-quart Instant Pot. Press [Saut&#233;], and use [Adjust] to select &#34;More&#34; mode. Place bacon in cooker, and cook, stirring constantly, 30 seconds. Add half of beef mixture to cooker; cook 5 minutes, browning on all sides. Remove beef and bacon from cooker. Repeat procedure with remaining beef mixture. Turn cooker off. Return cooked beef and bacon to cooker. Stir in wine and broth, scraping inner pot to loosen browned bits. Add carrots and next 4 ingredients (through garlic). 
 
-<br><br>To prepare the hollandaise: When the yolks have tripled in volume and the mixture thickly coats the back of a spoon, after about 5 minutes, remove the bowl from the simmering water. Stabilize the bowl and begin adding the melted butter in a slow, thin stream, whisking constantly as it is incorporated. The sauce will begin to thicken as more butter is added. When the hollandaise is thick, velvety, and coats the back of a spoon, add the lemon juice and taste and adjust seasoning with salt and additional lemon juice as needed. If too thick, add a little warm water to thin the consistency.
+<br><br>Close and lock the lid of the Instant Pot. Turn the steam release handle to &#34;Sealing&#34; position. Press [Manual]; select &#34;High Pressure,&#34; and use [-] or [+] to choose 23 minutes pressure cooking time. When time is up, turn cooker off. Open the cooker using Quick Pressure Release. Serve beef mixture over noodles. Garnish with thyme leaves, if desired.
 
-<br><br>If the sauce starts to break: It could be one of two things: either the butter was added too quickly, or the egg mixture got too hot (scrambled eggs). To rescue a broken sauce, try adding a small amount of boiling water and whisking until the sauce is smooth before adding more butter, or add another egg yolk to a clean bowl and set back over simmering water; whisk until thickened and using a fine mesh strainer to catch the scrambled egg, slowly strain the broken hollandaise gradually into the new egg yolk.
-
-<br><br>To serve: Place each salmon fillet on a warmed dinner plate and spoon hollandaise on top of each portion. Garnish with minced chives and serve immediately.
+<br><br>
 </div>
 
 </div>
@@ -2205,7 +2191,7 @@ globalData = {"user":[{"profile":[{"profileInfo":{"customerType":"customer","sec
 
 
 <script type="text/javascript">
-pageData = {"page":{"pageInfo":{"breadCrumbs":["Home","Recipes"],"pageName":"rdp: Seared Salmon With Saffron Hollandaise","referringURL":"https://www.google.com/"},"category":{"pageType":"recipe detail","categoryID":"recipes","primaryCategory":"Recipes","hierarchy":"Home,Recipes"},"listing":{}},"pageContext":"product","product":[{"productInfo":{"productID":"REC-490919","sku":"","brand":"","productName":"Seared Salmon With Saffron Hollandaise","storeId":"","classDate":"","startTime":"","restrictions":"","format":"","seats":"","price":"","category":"WRC-429208","variant":""},"category":{"primaryCategory":"Seafood","subCategory1":"","subCategory2":"","productType":"Recipe"},"skuVariant":{}}]};
+pageData = {"page":{"pageInfo":{"breadCrumbs":["Home","Recipes"],"pageName":"rdp: Beef Bourguignon from Instant Pot","referringURL":"https://www.google.com/"},"category":{"pageType":"recipe detail","categoryID":"recipes","primaryCategory":"Recipes","hierarchy":"Home,Recipes"},"listing":{}},"pageContext":"product","product":[{"productInfo":{"productID":"REC-354055","sku":"","brand":"","productName":"Beef Bourguignon from Instant Pot","storeId":"","classDate":"","startTime":"","restrictions":"","format":"","seats":"","price":"","category":"WRC-429205","variant":""},"category":{"primaryCategory":"Meat","subCategory1":"","subCategory2":"","productType":"Recipe"},"skuVariant":{}}]};
 </script>
 <script type="text/javascript">
 //Push page specific data to GTM if exists
@@ -2350,10 +2336,10 @@ window.User = {"zip":null,"storeId":null};
 
 
 
-<script>pageContext = {"title":"Seared Salmon With Saffron Hollandaise","type":"product","ns":"product"};</script>
+<script>pageContext = {"title":"Beef Bourguignon from Instant Pot","type":"product","ns":"product"};</script>
 <script>
-var meta = "Check out Seared Salmon With Saffron Hollandaise recipe and more from Sur La Table!";
-var keywords = "Le Creuset";
+var meta = "Check out Beef Bourguignon from Instant Pot recipe and more from Sur La Table!";
+var keywords = "";
 </script>
 <script type="text/javascript">
 
@@ -2393,9 +2379,9 @@ window.EmarsysPreferences = {"enabled":true,"trackingJsEnabled":false};
 	<script type="text/javascript" src="/on/demandware.static/Sites-SLT-Site/-/default/v1662494661361/js/turntopdp.js"></script>
 
 	<script type="text/javascript">
-	var TurnToItemSku = "REC-490919";
-	var TurnToChatterSku = "REC-490919";
-	var TurnToGallerySkus= ["REC-490919"];
+	var TurnToItemSku = "REC-354055";
+	var TurnToChatterSku = "REC-354055";
+	var TurnToGallerySkus= ["REC-354055"];
 	var TurnToReviewsEnable = true;
 	var TurnToQAEnable = true;
 	var TurnToVisualGalleryEnable = true;
@@ -2478,7 +2464,7 @@ window.EmarsysPreferences = {"enabled":true,"trackingJsEnabled":false};
 </script>
 
 
-	<script type="text/javascript" src="//static.www.turnto.com/sitedata/vZsv4B7pMmG7eLgsite/v4_3/REC-490919/d/itemjs"></script>
+	<script type="text/javascript" src="//static.www.turnto.com/sitedata/vZsv4B7pMmG7eLgsite/v4_3/REC-354055/d/itemjs"></script>
 
 
 
