@@ -1,8 +1,13 @@
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class RemoveHtmlEntity {
 
+/**
+ * Perform HTML-related operations.
+ */
+public final class RemoveHtmlEntity
+{
     /**
     * Table of HTML entities obtained from http://www.w3.org/TR/html401/sgml/entities.html
     * - Formatted as a series of space-delimited triplets (entity_name,entity_value,Unicode_value),
@@ -64,6 +69,7 @@ public class RemoveHtmlEntity {
     /** mapping: Unicode character ---> HTML entity */
     private static final Map<Character,String> UNICODE_TO_HTML_ENTITY_MAP = new HashMap<Character,String>();
 
+
     /**
     * Static initialization block.
     * Populates HTML_ENTITY_TO_UNICODE_MAP and UNICODE_TO_HTML_ENTITY_MAP.
@@ -87,6 +93,13 @@ public class RemoveHtmlEntity {
             UNICODE_TO_HTML_ENTITY_MAP.put(unicode, elements[i]);
         }
     }
+
+
+    /**
+    * Private constructor that should never be called.
+    */
+    private RemoveHtmlEntity()
+    {}
 
 
     /**

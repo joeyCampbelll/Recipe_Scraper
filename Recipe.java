@@ -1,15 +1,15 @@
+import java.io.*;
 import java.util.Scanner;
 
-
 public class Recipe {
-	private String name;
+	private String name = "";
 	private String path = "";
 	private String ingredients = "";
-	private String instructions;
+	private String instructions = "";
 	private String servings = "";
 	private String htmlString;
 
-	public Recipe(String htmlString) {
+	public Recipe(String htmlString) throws IOException {
 		this.htmlString = htmlString;
 		
 		parsePathAndName();
@@ -19,9 +19,10 @@ public class Recipe {
 
 		replaceHtmlEntities();
 
+		// Used for debugging
 		System.out.println(this);
 	}
-
+	
 
 	private void parsePathAndName() {
 
@@ -71,13 +72,13 @@ public class Recipe {
 				
 				// All ingredients start and end with an unordered list tag
 				//   Therefore, I read each line until I see the closing tag
-				while (!result.startsWith("</ul>")) {
+				while (!result.startsWith("</div>")) {
 					result = stringReader.nextLine();
 					ingredients += result + "\n";
 				}
 
 				// Gets rid of all html elements
-				ingredients = ingredients.replaceAll("<li>|</li>|<i>|</i>|<ul>|</ul>|<b>|</b>", "");
+				ingredients = ingredients.replaceAll("</div>|<li>|</li>|<i>|</i>|<ul>|</ul>|<b>|</b>", "");
 				ingredients = ingredients.replaceAll("<br>", "\n");
 
 				break;
@@ -105,7 +106,7 @@ public class Recipe {
 				// Gets rid of all html elements
 				instructions = instructions.replaceAll("</div>|<li>|</li>|<i>|</i>|<ul>|</ul>|<b>|</b>", "");
 				instructions = instructions.replaceAll("<br>", "");
-				
+
 				break;
 			}
 		}

@@ -40,6 +40,8 @@ public class RecipeScraper {
 			// Once the list of recipeLinks is created, the information of each recipe needs to be parsed
 			getRecipeInformation(recipeLinks, recipes);
 		}
+
+		System.out.println(recipes.size());
 	}
 
 	// This method parses the webpage of recipe tiles, returning a list of recipe links
