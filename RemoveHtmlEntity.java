@@ -62,8 +62,6 @@ public final class RemoveHtmlEntity
             "bdquo   #8222 201E   dagger  #8224 2020   Dagger  #8225 2021   permil  #8240 2030   lsaquo  #8249 2039   rsaquo  #8250 203A " +
             "euro    #8364 20AC   frac18  #8539 215B";
 
-    /** value given by RAW_HTML_ENTITY_TABLE.hashCode(), used to guard against accidental modification */
-    private static final int RAW_HTML_ENTITY_TABLE_HASHCODE = -301953893;
 
     /** mapping: HTML entity ---> Unicode character */
     private static final Map<String,Character> HTML_ENTITY_TO_UNICODE_MAP = new HashMap<String,Character>();
