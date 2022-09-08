@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Recipe {
 	private String name = "";
+	private String author = "";
 	private String path = "";
 	private String ingredients = "";
 	private String instructions = "";
@@ -16,15 +17,14 @@ public class Recipe {
 		parseServings();
 		parseIngredients();
 		parseInstructions();
-
+		parseAuthor();
 		replaceHtmlEntities();
 
 		// Used for debugging
-		System.out.println(this);
+		// System.out.println(this);
 
 		ingredients = ingredients.trim();
 		instructions = instructions.trim();
-
 	}
 	
 	private void parsePathAndName() {
@@ -56,6 +56,25 @@ public class Recipe {
 				name = temp;
 				
 				// Once the name of the recipe is retrieved, we can break out of the loop
+				break;
+			}
+		}
+
+		stringReader.close();
+	}
+
+	private void parseAuthor() {
+		Scanner stringReader = new Scanner(htmlString);
+
+		// This while loop scans the htmlString looking for the author of the recipe
+		//   It is entirely comprised of string manipulation and scanning
+		while (stringReader.hasNext()) {
+			String result = stringReader.nextLine();
+			// This if condition is checking for a prefix found before each author div
+			if (result.startsWith("<div class=\"recipe-author\"")) {
+				author = stringReader.nextLine();
+
+			// Once the author of the author is retrieved, we can break out of the loop
 				break;
 			}
 		}
@@ -111,7 +130,7 @@ public class Recipe {
 				}
 
 				// Gets rid of all html elements
-				instructions = instructions.replaceAll("</div>|<li>|</li>|<i>|</i>|<ul>|</ul>|<b>|</b>", "");
+				instructions = instructions.replaceAll("<ol>|</ol>|</div>|<li>|</li>|<i>|</i>|<ul>|</ul>|<b>|</b>", "");
 				instructions = instructions.replaceAll("<br>", "");
 
 				break;
@@ -128,11 +147,11 @@ public class Recipe {
 		while (stringReader.hasNext()) {
 			String result = stringReader.nextLine();
 
-			// This if condition is checking for a prefix found before each path element
+			// This if condition is checking for a prefix found before each servings element
 			if (result.startsWith("<div class=\"recipe-details-serves\"")) {
 				servings = stringReader.nextLine();
 
-			// Once the name of the recipe is retrieved, we can break out of the loop
+			// Once the servings of the recipe is retrieved, we can break out of the loop
 				break;
 			}
 		}
@@ -143,12 +162,31 @@ public class Recipe {
 		stringReader.close();
 	}
 
+	// Gets rid of entities using the RemoveHtmlEntity Class, as well as a couple replace methods
 	private void replaceHtmlEntities() {
 		name = RemoveHtmlEntity.replaceHtmlEntities(name);
 		path = RemoveHtmlEntity.replaceHtmlEntities(path);
 		ingredients = RemoveHtmlEntity.replaceHtmlEntities(ingredients);
 		instructions = RemoveHtmlEntity.replaceHtmlEntities(instructions);
 		servings = RemoveHtmlEntity.replaceHtmlEntities(servings);
+
+		name = name.replaceAll("&#8539", "1/8");
+		path = path.replaceAll("&#8539", "1/8");
+		ingredients = ingredients.replaceAll("&#8539", "1/8");
+		instructions = instructions.replaceAll("&#8539", "1/8");
+		servings = servings.replaceAll("&#8539", "1/8");
+
+		name = name.replaceAll("&#8532", "2/3");
+		path = path.replaceAll("&#8532", "2/3");
+		ingredients = ingredients.replaceAll("&#8532", "2/3");
+		instructions = instructions.replaceAll("&#8532", "2/3");
+		servings = servings.replaceAll("&#8532", "2/3");
+
+		name = name.replaceAll("&#8531", "1/3");
+		path = path.replaceAll("&#8531", "1/3");
+		ingredients = ingredients.replaceAll("&#8531", "1/3");
+		instructions = instructions.replaceAll("&#8531", "1/3");
+		servings = servings.replaceAll("&#8531", "1/3");
 	}
 
 	public String getName() {
@@ -157,6 +195,14 @@ public class Recipe {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getAuthor() {
+		return this.author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 
 	public String getPath() {
@@ -202,6 +248,7 @@ public class Recipe {
 	@Override
 	public String toString() {
 		return "Name:   " + this.name + "\n" +
+				"Author:   " + this.author + "\n" +
 				"Path:   " + this.path + "\n" +
 				"Serves: " + this.servings + "\n\n" +
 				"Ingredients: " + this.ingredients + "\n\n" +

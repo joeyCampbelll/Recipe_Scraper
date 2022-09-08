@@ -1,6 +1,4 @@
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -17,17 +15,18 @@ public class RecipeScraper {
     }
 
 	private static void runScraper() throws IOException, InterruptedException {
+		// String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24" };
 		String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24", 
 							"https://www.surlatable.com/recipes/?srule=best-matches&start=24&sz=24", 
 							"https://www.surlatable.com/recipes/?srule=best-matches&start=48&sz=24", 
 							"https://www.surlatable.com/recipes/?srule=best-matches&start=72&sz=24" };
-		// String[] urls = { "https://www.surlatable.com/recipes/?srule=best-matches&start=0&sz=24" };
 		
 		// This is the main ArrayList of type Recipe which is an object encapsulating recipe information
 		ArrayList<Recipe> recipes = new ArrayList<Recipe>();
 
 		// Loops through the recipe pages and their respective URL's to get information on each recipe
 		//   This is the main loop for the program
+		int recipeCount = 0;
 		for (String url : urls) {
 			HttpClient client = HttpClient.newHttpClient();
 			HttpRequest request = HttpRequest.newBuilder()
@@ -40,14 +39,19 @@ public class RecipeScraper {
 			ArrayList<String> recipeLinks = getRecipeLinks(response.body());
 
 			// Once the list of recipeLinks is created, the information of each recipe needs to be parsed
-			getRecipeInformation(recipeLinks, recipes);
+			getRecipeInformation(recipeLinks, recipes, recipeCount);
+			recipeCount += 24;
 		}
 
 		List<String[]> dataLines = new ArrayList<>();
+		dataLines.add(new String[] {
+			"Name", "Author", "Path", "Servings", "Ingredients", "Instructions"
+		});
 
 		for (Recipe recipe : recipes) {
 			dataLines.add(new String[] {
 				recipe.getName(),
+				recipe.getAuthor(),
 				recipe.getPath(),
 				recipe.getServings(),
 				recipe.getIngredients(),
@@ -55,7 +59,7 @@ public class RecipeScraper {
 			});
 		}
 
-		CSVWriter writer = new CSVWriter(dataLines, "ioFiles\\recipes.csv");
+		CSVWriter writer = new CSVWriter(dataLines, "recipes.csv");
 		writer.writeCSV();
 	}
 
@@ -82,7 +86,7 @@ public class RecipeScraper {
 	}
 
 	// This is the method that controls the scraping of each individual recipe 
-	private static void getRecipeInformation(ArrayList<String> recipeLinks, ArrayList<Recipe> recipes) throws IOException, InterruptedException{
+	private static void getRecipeInformation(ArrayList<String> recipeLinks, ArrayList<Recipe> recipes, int recipeCount) throws IOException, InterruptedException{
 		// Loop through each recipe and gather necessary recipe data
 		for (String recipeLink : recipeLinks) {
 			HttpClient client = HttpClient.newHttpClient();
@@ -95,10 +99,8 @@ public class RecipeScraper {
 			String htmlString = response.body();
 
 			recipes.add(new Recipe(htmlString));
-
+			System.out.println("Completed Parsing Recipe #" + ++recipeCount);
 			TimeUnit.SECONDS.sleep(2);
 		}
 	}
-
-	
 }
